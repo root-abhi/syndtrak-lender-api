@@ -21,6 +21,8 @@ spec:
           env:
             - name: PORT
               value: "3001"
+            - name: JWT_SECRET
+              value: "syndtrak-jwt-secret-2024"
           readinessProbe:
             httpGet:
               path: /health
